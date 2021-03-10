@@ -1,0 +1,53 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.nav-link {
+  @apply p-2 text-xs text-gray-600 transition ease-in-out rounded-sm hover:bg-gray-200;
+}
+
+* {
+  font-family: 'Libre Franklin';
+}
+
+.custom-blue-300 {
+  background-color: #06438f;
+  color: white;
+}
+
+.custom-blue-500 {
+  background-color: #0854b3;
+  color: white;
+}
+
+.custom-blue-800 {
+  background-color: #032550;
+  color: white;
+}
+
+.custom-hover-nav-active {
+  background-color: hsla(0, 0%, 100%, 0.15);
+  border-left-color: #40bd9e;
+  border-left-width: 4px;
+}
+
+.custom-hover-nav:hover {
+  background-color: hsla(0, 0%, 100%, 0.15);
+}
+
+.custom-badge {
+  background-color: #40bd9e;
+  border-radius: 2px;
+  font-size: 10px;
+  height: 22px;
+  font-weight: 500;
+  margin-left: 7px;
+  padding: 0 7px;
+}
+
+.custom-shadow-header {
+  box-shadow: 0 0 1px rgb(0 0 0 / 5%), 0 0 3px rgb(0 0 0 / 5%),
+    0 2px 8px rgb(0 0 0 / 5%);
+}
