@@ -15,6 +15,7 @@ const prodConfig = {
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name].[contenthash].js",
+    publicPath: "dist",
   },
   plugins: [
     new ModuleFederationPlugin({
