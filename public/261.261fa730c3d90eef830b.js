@@ -1,0 +1,1 @@
+(self.webpackChunk_microfeui_ui_container_module=self.webpackChunk_microfeui_ui_container_module||[]).push([[261],{261:(e,u,n)=>{"use strict";n.r(u),n.d(u,{default:()=>i});var r=n(271),t=n.n(r),c=n(617);const i=()=>{const e=(0,r.useRef)(null);return(0,r.useEffect)((()=>{(0,c.mount)(e.current)}),[]),t().createElement("div",{ref:e})}}}]);

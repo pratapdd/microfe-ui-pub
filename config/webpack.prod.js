@@ -2,6 +2,7 @@ const { merge } = require("webpack-merge");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const commonConfig = require("./webpack.common");
 const packageJson = require("../package.json");
+const path = require("path");
 
 const domain = process.env.PRODUCTION_DOMAIN;
 
@@ -12,8 +13,9 @@ const RULES_PUB_PATH = "/s3_bucket/latest/rules/";
 const prodConfig = {
   mode: "production",
   output: {
+    path: path.resolve(__dirname, "../public"),
     filename: "[name].[contenthash].js",
-    publicPath: "/public/",
+    publicPath: "public",
   },
   plugins: [
     new ModuleFederationPlugin({
