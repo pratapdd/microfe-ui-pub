@@ -1,6 +1,6 @@
 ## Instructions for manual deployment
 
-First clone the project and start from the root directory.
+First clone the project and start from the root directory
 
 ### 3. start all the child microservices projects
 
