@@ -13,9 +13,8 @@ const RULES_PUB_PATH = "/s3_bucket/latest/rules/";
 const prodConfig = {
   mode: "production",
   output: {
-    path: path.resolve(__dirname, "../public"),
+    path: path.resolve(__dirname, "../dist"),
     filename: "[name].[contenthash].js",
-    publicPath: "public",
   },
   plugins: [
     new ModuleFederationPlugin({

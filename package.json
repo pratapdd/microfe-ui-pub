@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "commit": "git-cz",
-    "prebuild": "rimraf dist",
     "start": "npm run watch:css && webpack serve --config config/webpack.dev.js",
     "webpack:prod": "webpack --config config/webpack.prod.js",
-    "build": "npm-run-all prebuild webpack:prod",
+    "build": "npm-run-all webpack:prod",
     "lint": "eslint .",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "link-components": "yarn link \"@pratapdd/microfe-ui-components\"",
